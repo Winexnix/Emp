@@ -1,0 +1,25 @@
+#caja{
+    padding: 50px 300px 50px 300px;
+    border-radius: 21px;
+    background: #f5f5f5;
+    box-shadow: -7px -7px 22px #000000,
+    7px 7px 22px #020000;
+}
+.caja1{
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1cm;
+}
+#video{
+    padding-right: 2cm;
+}
+#con{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
