@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    background-image: url(Imagenes/aaaaaaaaaaaa.png);
+    background-attachment: fixed;
+    overflow: scroll;
+    background-size: cover;
+}
+
+.wnav {
+    position: fixed !important;
+    width: 100% !important;
+    background: #0c3258 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 15px 15px 15px 2% !important;
+    -webkit-box-shadow: 0px 6px 59px 0px rgba(255, 255, 255, 1) !important;
+    -moz-box-shadow: 0px 6px 59px 0px rgba(255, 255, 255, 1) !important;
+    box-shadow: 0px 6px 59px 0px rgba(255, 255, 255, 1) !important;
+    z-index: 1;
+}
+
+.wlogo>img {
+    width: 120px;
+}
+
+.wmenu {
+    display: flex;
+}
+
+.wmenu li {
+    list-style: none;
+    margin: 10px;
+
+}
+
+.wmenu li a {
+    font-size: 23px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.wmenu li a:hover {
+    padding: 5px 10px;
+    background: orange;
+    color: #000;
+    border-radius: 15px;
+}
+
+.menu-btn {
+    color: #fff;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+#warreglo {
+    height: 131.87px;
+}
+
+
+#wfooter {
+    display: flex;
+    justify-content: space-between;
+    -webkit-box-shadow: 0px -12px 59px 0px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px -12px 59px 0px rgba(255, 255, 255, 1);
+    box-shadow: 0px -12px 59px 0px rgba(255, 255, 255, 1);
+    background-color: transparent;
+    height: 6cm;
+}
+
+#winfo {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    padding-top: 15px;
+}
+
+#winfo .wseccionfooter {
+    padding: 2%;
+}
+
+#winfo .wseccionfooter h1 {
+    font-size: 22px;
+    color: #fff;
+    padding-bottom: 7px;
+}
+
+#winfo .wseccionfooter h2 {
+    font-size: 17px;
+    color: #fff;
+}
+
+#winfo .wseccionfooter .wredes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#winfo .wseccionfooter .wredes img {
+    width: 30px;
+}
+
+#wlogo {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#wlogo img {
+    width: 120px;
+}
+
+#winfo .wseccionfooter1 {
+    padding: 2%;
+}
+
+@media screen and (max-width:1150px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .wmenu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100vh;
+        background: rgb(121, 121, 121);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease;
+        transform: translateX(-100%);
+    }
+
+    .wmenu li {
+        margin: 15px 0;
+    }
+
+    .wmenu.active {
+        transform: translateX(0%);
+    }
+}
